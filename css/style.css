@@ -103,19 +103,19 @@
     0% {
         opacity: 1;
     }
-    
+
     30% {
         opacity: 0.8;
     }
-    
+
     50% {
         opacity: 0.2;
     }
-    
+
     70% {
         opacity: 0.8;
     }
-    
+
     100% {
         opacity: 1;
     }
@@ -125,7 +125,7 @@
 
 body {
     background-color: #eaf9ff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Comic Sans MS';
 }
 
 hr {
@@ -142,8 +142,8 @@ hr {
     text-align: center;
     padding: 1%;
     font-size: 1em;
-    font-family: 'Source Sans Pro', sans-serif;
     position: relative;
+    font-family: 'Comic Sans MS';
     text-align: center;
 }
 
@@ -189,8 +189,9 @@ hr {
 .brand-div {
     width: 100%;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #eaf9ff;
+    /* background-color: #eaf9ff; */
+    background-image: linear-gradient(90deg, #69c7ec,#eaf9ff, #eaf9ff,#69c7ec);
+    font-family: 'Comic Sans MS';
     padding: 0;
 }
 
@@ -211,9 +212,16 @@ hr {
     align-items: center;
     color: black;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
     /* background-color: #05716c; */
+    font-family: 'Comic Sans MS';
     margin: -30px 0 -16px 0;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .brand-div-container {
+        margin: 0;
+        margin-bottom: 5px;
+    }
 }
 
 #lab-logo {
@@ -224,6 +232,17 @@ hr {
     padding: 3%;
 }
 
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #lab-logo {
+        width: 15%;
+        margin-left: 10px;
+    }
+
+    #iit-kgp-logo {
+        padding: 1.5%;
+    }
+}
+
 .brand-div-container p {
     width: 100%;
     font-size: 2.75rem;
@@ -232,9 +251,23 @@ hr {
     /* text-decoration: underline; */
 }
 
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .brand-div-container p {
+        font-size: 2.5rem;
+        line-height: 1.2em;
+    }
+}
+
 .brand-div span {
     font-size: 1.16rem;
     font-weight: 600;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .brand-div span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
 }
 
 /* code for navigation bar */
@@ -243,8 +276,8 @@ nav {
     display: inline-block;
     width: 100%;
     background-color: black;
-    border-top: #289ccd 5px solid;
-    font-family: 'Source Sans Pro', sans-serif;
+    border-top: #007acc 5px solid;
+    font-family: 'Comic Sans MS';
 }
 
 nav a:link {
@@ -254,9 +287,8 @@ nav a:link {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    /* font-family: 'Consolas'; */
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
+    font-family: 'Comic Sans MS';
     padding: 1.2%;
 }
 
@@ -266,8 +298,18 @@ nav a:visited {
 }
 
 nav a:hover {
-    text-decoration: underline 1px;
+    /* text-decoration: underline 1px; */
     text-decoration-color: white;
+    background-color: rgba(0, 122, 204, 0.452);
+    /* background-color: rgba(40, 156, 205, 0.456); */
+}
+
+.active-page {
+    background-color: #007acc;
+}
+
+.active-page:hover {
+    background-color: #007acc;
 }
 
 nav a:focus {
@@ -389,8 +431,8 @@ nav div a:link {
     margin: 0 auto;
     font-size: 2em;
     font-variant: small-caps;
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
+    font-family: 'Comic Sans MS';
     text-align: center;
     animation: group-updates-flicker infinite ease-in-out 1s;
     background: #006892;
@@ -409,7 +451,7 @@ nav div a:link {
     25% {
         text-shadow: yellow 0px 0px 7px;
     }
-    
+
     50% {
         text-shadow: green 0px 0px 7px;
     }
@@ -435,14 +477,22 @@ nav div a:link {
     padding: 5% 5%;
     line-height: 1.2em;
     text-align: justify;
-    font-family: 'Source Sans Pro', sans-serif;
     list-style-type: none;
+    font-family: 'Comic Sans MS';
     border-bottom: darkblue 0.5px solid;
     margin: 0.5%;
 }
 
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .split-right-sec li {
+        font-size: 1em;
+        padding: 10%;
+        text-align: justify;
+    }
+}
+
 .split-right-sec li:hover {
-    background-color: rgb(197, 229, 240);
+    background-color: rgb(146, 203, 222);
 }
 
 .split-right-sec strong {
@@ -451,7 +501,7 @@ nav div a:link {
 }
 
 /* .typewriter h3 { */
-    /* text-align: center; */
+/* text-align: center; */
 /* overflow: hidden; */
 /* Ensures the content is not revealed until the animation */
 /* border-right: 0.1em solid grey; */
@@ -514,8 +564,8 @@ nav div a:link {
     margin: 0 auto;
     border: black solid 1px;
     font-size: 1.1em;
-    font-family: "Frutiger", sans-serif;
     text-align: center;
+    font-family: 'Comic Sans MS';
     color: white;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -540,8 +590,9 @@ nav div a:link {
     width: 100%;
     height: 25vw;
     color: rgba(255, 255, 255, 0.733);
-    background-image: linear-gradient(rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.4)),
-        url(../imgs/general/home-header-bkgrnd.png);
+    /* background-image: linear-gradient(rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.4)), */
+        /* url(../imgs/general/home-header-bkgrnd.png); */
+    background-image: url(../imgs/general/home-header-bkgrnd.png);
     background-size: cover;
     background-position: initial;
     border-bottom: 2px solid black;
@@ -556,8 +607,8 @@ nav div a:link {
   margin: 10% auto 2%;
   font-size: 5vw;
   padding: 1.5% 0;
-  font-family: serif;
   font-variant: small-caps;
+  font-family: 'Comic Sans MS';
   color: lightblue;
   font-weight: 500;
 }
@@ -620,7 +671,7 @@ nav div a:link {
 .who-are-we-div {
     width: 98%;
     margin: 0 auto;
-    background-color: rgb(197, 229, 240);
+    background-image: linear-gradient(rgb(187, 223, 235), rgb(95, 200, 235));
     padding: 0;
     border: solid #003449 5px;
     border-radius: 5px;
@@ -649,6 +700,12 @@ nav div a:link {
     text-align: justify;
 }
 
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .body-sec p {
+        font-size: 1.15em;
+    }
+}
+
 .body-sec blockquote {
     width: 80%;
     margin: 4% auto;
@@ -657,20 +714,29 @@ nav div a:link {
     /* border-radius: 5%; */
     padding: 1%;
     font-weight: bold;
-    /* font-family: "Bahnschrift SemiBold"; */
     color: #003449;
+    font-family: 'Comic Sans MS';
     /* text-shadow: -1px -1px 2px #003449, 1px 1px 2px #003449, -1px 1px 2px #003449, 1px -1px 2px #003449; */
 }
 
-.poster-sec {
-    position: relative;
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .body-sec blockquote {
+        font-size: 1.7em;
+        line-height: 1em;
+    }
+}
+
+.poster-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .poster-sec p {
     width: 40%;
-    float: right;
-    margin-top: 4%;
-    margin-right: 4%;
+    /* float: right; */
+    /* margin-top: 4%; */
+    /* margin-right: 4%; */
     text-align: center;
 }
 
@@ -678,17 +744,16 @@ nav div a:link {
     display: block;
     margin: 0;
     color: white;
-    background-color: #05716c;
-    border: none;
-    outline: none;
+    background-color: #007acc;
     width: auto;
     font-size: 1em;
     margin: 10% auto;
-    padding: 5% 3%;
+    padding: 3% 5%;
     border-radius: 5px;
-    outline: 2px solid black;
+    border: 1.5px solid black;
+    outline: none;
     cursor: pointer;
-    /* font-family: "Frutiger", sans-serif; */
+    font-family: 'Comic Sans MS';
 }
 
 .poster-sec button:hover,
@@ -700,15 +765,17 @@ nav div a:link {
     from {
         box-shadow: none;
     }
+
     to {
-        text-decoration: underline;
-        background-color: rgba(9, 160, 152, 0.986);
-        box-shadow: 10px 5px #888888;
+        /* text-decoration: underline; */
+        background-color: rgba(0, 122, 204, 0.814);
+        /* outline: 3px solid black; */
+        box-shadow: 7px 5px #515151;
     }
 }
 
 .poster-sec button:active {
-    color: grey;
+    color: black;
 }
 
 #img-container {
@@ -721,6 +788,26 @@ nav div a:link {
 
 #img-container img {
     width: 100%;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    #img-container {
+        width: 70%;
+        height: calc((600/430) * (70%));
+    }
+
+    #img-container img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .js-image-zoom__zoomed-area {
+        display: none !important;
+    }
+
+    .js-image-zoom__zoomed-image {
+        display: none !important;
+    }
 }
 
 #img-container img:hover {
@@ -831,8 +918,8 @@ footer {
     font-size: 2.7em;
     padding: 2% 5%;
     border-radius: 5px;
-    /* font-family: "Frutiger", sans-serif; */
     font-variant: small-caps;
+    font-family: 'Comic Sans MS';
     color: black;
     font-weight: 900;
     /* background-color: white; */
@@ -908,6 +995,7 @@ footer {
     from {
         box-shadow: none;
     }
+
     to {
         text-decoration: underline;
         background-color: rgba(9, 160, 152, 0.986);
@@ -982,8 +1070,8 @@ footer {
     padding: 2.5% 0;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    /* font-family: "Frutiger", sans-serif; */
     background-color: #0a5679;
+    font-family: 'Comic Sans MS';
     color: white;
     /* border-bottom-right-radius: 20%; */
     /* border-bottom-left-radius: 20%; */
@@ -1045,14 +1133,14 @@ footer {
     font-size: 1.5em;
     font-weight: 600;
     text-align: center;
-    /* font-family: "Frutiger", sans-serif; */
+    font-family: 'Comic Sans MS';
 }
 
 .shibayan-sir>div article p {
     padding-top: 1em;
     font-size: 1.2em;
     text-align: justify;
-    /* font-family: "Frutiger", sans-serif; */
+    font-family: 'Comic Sans MS';
 }
 
 .shibayan-sir-links {
@@ -1061,7 +1149,7 @@ footer {
 
 .shibayan-sir-links a:link {
     display: inline-block;
-    width:auto;
+    width: auto;
     text-align: center;
     padding: 1% 3%;
     border-radius: 5px;
@@ -1071,7 +1159,7 @@ footer {
     font-size: 1em;
     text-decoration: none;
     color: white;
-    /* font-family: "Frutiger", sans-serif; */
+    font-family: 'Comic Sans MS';
 }
 
 .shibayan-sir-links a:visited {
@@ -1142,9 +1230,9 @@ abbr {
     text-align: center;
     background-color: #1fbfb8;
     margin-bottom: 1%;
-    /* font-family: "Frutiger", sans-serif; */
     outline: 2px solid black;
-    color: black;   
+    font-family: 'Comic Sans MS';
+    color: black;
     transition: all 0.1s ease-in-out;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -1172,8 +1260,8 @@ abbr {
     font-size: 2em;
     background-color: #1978a5;
     padding: 1% 0 1.5%;
-    /* font-family: "Frutiger", sans-serif; */
     /* border-top: solid 3px black; */
+    font-family: 'Comic Sans MS';
     /* border-bottom: solid 3px black; */
     color: white;
 }
@@ -1186,7 +1274,7 @@ abbr {
     padding: 0.5% 0;
     font-size: 1.2em;
     list-style: square;
-    /* font-family: "Frutiger", sans-serif; */
+    font-family: 'Comic Sans MS';
 }
 
 #alumni-sec {
@@ -1218,8 +1306,8 @@ abbr {
     width: 70%;
     margin: 3% 0 1%;
     margin-left: 3%;
-    /* font-family: "Frutiger", sans-serif; */
     flex-grow: 2;
+    font-family: 'Comic Sans MS';
 }
 
 .individual-profile article h3 {
@@ -1243,7 +1331,7 @@ abbr {
     color: white;
     text-decoration: none;
     background-color: #031163;
-    /* font-family: "Frutiger", sans-serif; */
+    font-family: 'Comic Sans MS';
 }
 
 .individual-profile a:visited {
@@ -1287,8 +1375,8 @@ abbr {
     font-size: 3em;
     background-color: #1978a5;
     padding: 1% 0 1.5%;
-    /* font-family: "Frutiger", sans-serif; */
     /* border-top: solid 3px black; */
+    font-family: 'Comic Sans MS';
     /* border-bottom: solid 3px black; */
     color: white;
 }
@@ -1301,7 +1389,7 @@ abbr {
     padding: 0.5% 0;
     font-size: 1.3em;
     list-style: square;
-    /* font-family: "Frutiger", sans-serif; */
+    font-family: 'Comic Sans MS';
 }
 
 /* code for research page */
@@ -1448,8 +1536,8 @@ abbr {
 }
 
 .research-head-points {
-    /* font-family: "Frutiger", sans-serif; */
     width: 90%;
+    font-family: 'Comic Sans MS';
     margin: 5px auto 0;
     font-size: 2em;
     padding: 1.5% 0;
@@ -1613,30 +1701,33 @@ abbr {
     padding: 1% 0;
     font-size: 1em;
     text-align: justify;
-    /* font-family: "Frutiger", sans-serif; */
     line-height: 1.2em;
+    font-family: 'Comic Sans MS';
 }
 
 .featured-book {
     width: 100%;
     height: auto;
     margin: 4% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .featured-book img {
     width: 60%;
-    float: left;
-    margin: 1% 0 5%;
+    /* float: left; */
+    /* margin: 1% 0 5%; */
     outline: solid 3px black;
 }
 
 .featured-book h5 {
-    display: inline-block;
+    /* display: inline-block; */
     width: 30%;
     text-align: justify;
-    margin: 2% 0 0;
+    /* margin: 2% 0 0; */
     font-size: 1em;
-    padding-top: 4%;
+    /* padding-top: 4%; */
 }
 
 .funding-div {
@@ -1695,7 +1786,7 @@ abbr {
 }
 
 /* #ongoing-work { */
-    /* background-color: white; */
+/* background-color: white; */
 /* } */
 
 /* details - summary styling */
@@ -1805,6 +1896,7 @@ details[open]>*:not(summary) {
     padding: 5px;
     margin-bottom: 0;
 }
+
 /* 
 .facility-grid div:nth-child(3n + 1) {
     clear: both;
@@ -1824,8 +1916,8 @@ details[open]>*:not(summary) {
     text-align: center;
     background-color: #1fbfb8;
     /* margin-bottom: 1%; */
-    /* font-family: "Frutiger", sans-serif; */
     /* outline: 2px solid black; */
+    font-family: 'Comic Sans MS';
     border: solid 2px black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -2108,7 +2200,7 @@ details[open]>*:not(summary) {
     width: 70%;
     margin: 0 auto;
     font-size: 1em;
-    
+
 }
 
 .contact-box ul {
@@ -2187,7 +2279,7 @@ details[open]>*:not(summary) {
     width: 100%;
     float: left;
     padding-top: 0px;
-    font-family: "Frutiger", sans-serif;
+    font-family: 'Comic Sans MS';
 }
 
 #form-div {
@@ -2205,8 +2297,8 @@ details[open]>*:not(summary) {
 
 .montform .feedback-input {
     color: #3c3c3c;
-    font-family: "Frutiger", sans-serif;
     font-weight: 500;
+    font-family: 'Comic Sans MS';
     font-size: 18px;
     border-radius: 0;
     line-height: 22px;
@@ -2242,8 +2334,8 @@ details[open]>*:not(summary) {
 }
 
 .button-blue {
-    font-family: "Frutiger", sans-serif;
     /* float:left; */
+    font-family: 'Comic Sans MS';
     width: 100%;
     border: #f2f2f2 solid 4px;
     cursor: pointer;
