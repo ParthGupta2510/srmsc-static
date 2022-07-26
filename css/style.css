@@ -451,6 +451,7 @@ nav div a:link {
     25% {
         text-shadow: yellow 0px 0px 7px;
     }
+
     50% {
         text-shadow: green 0px 0px 7px;
     }
@@ -994,6 +995,7 @@ footer {
     from {
         box-shadow: none;
     }
+
     to {
         text-decoration: underline;
         background-color: rgba(9, 160, 152, 0.986);
@@ -1894,6 +1896,7 @@ details[open]>*:not(summary) {
     padding: 5px;
     margin-bottom: 0;
 }
+
 /* 
 .facility-grid div:nth-child(3n + 1) {
     clear: both;
@@ -2197,6 +2200,7 @@ details[open]>*:not(summary) {
     width: 70%;
     margin: 0 auto;
     font-size: 1em;
+
 }
 
 .contact-box ul {
